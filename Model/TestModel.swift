@@ -7,6 +7,6 @@
 
 import Foundation
 
-class TestModel {
-    
+public class TestModel {
+    public init () { }
 }

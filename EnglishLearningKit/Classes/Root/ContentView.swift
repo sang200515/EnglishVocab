@@ -31,7 +31,7 @@ enum Config {
         return "Model"
 #elseif Core
         return "Core"
-#elseif dev
+#elseif Dev
         return "dev"
 #elseif Production
         return "Production"
