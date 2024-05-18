@@ -17,19 +17,21 @@ public struct MultilineHStack: View {
         }
     }
     
-    private let items: [AnyView]
+    private let items: [Any] // Convert AnyView to Any
     @State private var sizes: [CGSize] = []
     
-    public init<Data: RandomAccessCollection,  Content: View>(_ data: Data, @ViewBuilder content: (Data.Element) -> Content) {
-        self.items = data.map { AnyView(content($0)) }
+    public init<Data: RandomAccessCollection, Content: View>(_ data: Data, @ViewBuilder content: (Data.Element) -> Content) {
+        self.items = data.map { content($0) as Any }
     }
     
     public var body: some View {
-        GeometryReader {geometry in
+        GeometryReader { geometry in
             ZStack(alignment: .topLeading) {
                 ForEach(0..<self.items.count, id: \.self) { index in
-                    self.items[index].background(self.backgroundView())
-                        .offset(self.getOffset(at: index, geometry: geometry))
+                    if let view = self.items[index] as? Text {
+                        view.background(self.backgroundView())
+                            .offset(self.getOffset(at: index, geometry: geometry))
+                    }
                 }
             }
         }.onPreferenceChange(SizePreferenceKey.self) {
@@ -38,10 +40,10 @@ public struct MultilineHStack: View {
     }
     
     private func getOffset(at index: Int, geometry: GeometryProxy) -> CGSize {
-        guard index < sizes.endIndex else {return .zero}
+        guard index < sizes.endIndex else { return .zero }
         let frame = sizes[index]
-        var (x,y,maxHeight) = sizes[..<index].reduce((CGFloat.zero,CGFloat.zero,CGFloat.zero)) {
-            var (x,y,maxHeight) = $0
+        var (x, y, maxHeight) = sizes[..<index].reduce((CGFloat.zero, CGFloat.zero, CGFloat.zero)) {
+            var (x, y, maxHeight) = $0
             x += $1.width
             if x > geometry.size.width {
                 x = $1.width
@@ -49,7 +51,7 @@ public struct MultilineHStack: View {
                 maxHeight = 0
             }
             maxHeight = max(maxHeight, $1.height)
-            return (x,y,maxHeight)
+            return (x, y, maxHeight)
         }
         if x + frame.width > geometry.size.width {
             x = 0

@@ -16,7 +16,7 @@ struct HomeView: View {
     @State private var onSucess: Bool = false
     @State private var onEdittingSucess: Bool = false
     @State  var onCompleted: Bool = false
-    @State private var listString: [String] = "Ce If you're looki".keywords
+    @State private var listString: [String] = "Sure, here's the updated code with the comment fixed:".keywords
     @State private var listWrongKeyWord: [String] = []
     @FocusState private var isFocused: Bool
     var body: some View {
@@ -30,16 +30,7 @@ struct HomeView: View {
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(10)
                     .padding(.horizontal)
-                //make this view only display 3second and hide it
-                if onSucess {
-                    SuccessAnimation()
-                        .frame(width: 40, height: 40)
-                } else {
-                    FailureAnimation()
-                        .frame(width: 40, height: 40)
-                }
             }
-            
         }
         .frame(maxWidth: .infinity)
         .padding()
@@ -52,7 +43,6 @@ struct HomeView: View {
             popupView
         }
     }
-    
 }
 
 private extension HomeView {
@@ -64,8 +54,13 @@ private extension HomeView {
             .frame(maxWidth: .infinity, alignment: .center)
             .overlay {
                 Button(action: {
-                    print("!23")
-                   
+                    if let clipboardContent = UIPasteboard.general.string, !clipboardContent.isEmpty {
+                        listString = clipboardContent.keywords
+                        currentIndex = 0
+                        currentText = listString[currentIndex]
+                        searchText = ""
+                    }
+                    
                 }, label: {
                     Text("Paste")
                         .font(.system(size: 30))
@@ -98,8 +93,6 @@ private extension HomeView {
     
     var searchTextField: some View {
         TextField(currentText, text: $searchText)
-            .keyboardType(.default)
-            .keyboardType(.twitter)
             .autocorrectionDisabled(true)
             .font(.system(size: 50, weight: .bold))
             .padding()
@@ -133,8 +126,7 @@ private extension HomeView {
                 searchText = ""
                 isFocused = true
                 
-                if currentText.lowercased() != searchText
-                    .lowercased() {
+                if currentText.lowercased() != searchText.lowercased() {
                     listWrongKeyWord.append(listString[currentIndex - 1])
                     print("listWrongKeyWord \(listWrongKeyWord)")
                 }
