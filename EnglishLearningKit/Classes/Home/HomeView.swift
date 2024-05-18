@@ -15,7 +15,13 @@ struct HomeView: View {
     @State private var currentIndex: Int = 0
     @State private var onSucess: Bool = false
     @State private var onEdittingSucess: Bool = false
-    @State  var onCompleted: Bool = false
+    @State  var onCompleted: Bool = false {
+        didSet {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                resetState()
+            }
+        }
+    }
     @State private var listString: [String] = "Sure, here's the updated code with the comment fixed:".keywords
     @State private var listWrongKeyWord: [String] = []
     @FocusState private var isFocused: Bool
@@ -38,7 +44,6 @@ struct HomeView: View {
         .preferredColorScheme(.dark)
         .onAppear {
             currentText = listString[currentIndex]
-            print(listString)
         }.sheet(isPresented: $onCompleted) {
             popupView
         }
@@ -46,6 +51,12 @@ struct HomeView: View {
 }
 
 private extension HomeView {
+    private func resetState(){
+        currentIndex = 0
+        currentText = listString[currentIndex]
+        searchText = ""
+    }
+    
     var titleView: some View {
         Text("Text editing")
             .font(.largeTitle)
@@ -55,10 +66,10 @@ private extension HomeView {
             .overlay {
                 Button(action: {
                     if let clipboardContent = UIPasteboard.general.string, !clipboardContent.isEmpty {
-                        listString = clipboardContent.keywords
-                        currentIndex = 0
-                        currentText = listString[currentIndex]
-                        searchText = ""
+                        listString = clipboardContent
+                            .keywords
+                        
+                        resetState()
                     }
                     
                 }, label: {
@@ -96,7 +107,7 @@ private extension HomeView {
             .autocorrectionDisabled(true)
             .font(.system(size: 50, weight: .bold))
             .padding()
-            .foregroundColor(onEdittingSucess ? .blue : .red) // làm thế nào để kiểm tra nếu từng mỗi kí từ trùng với nhau sẽ tô màu kí tự đó
+            .foregroundColor(onEdittingSucess ? .blue : .red)
             .font(.body)
             .frame(width: 350, height: 60)
             .textInputAutocapitalization(.never)

@@ -12,7 +12,6 @@ extension String {
     var keywords: [String] {
         let tagger = NLTagger(tagSchemes: [.lexicalClass, .tokenType])
         tagger.string = self
-        print(tagger.string)
         var results = [String]()
         tagger.enumerateTags(in: startIndex ..< endIndex, unit: .word, scheme: .lexicalClass) { tag, range in
             if let tag {
@@ -27,13 +26,15 @@ extension String {
                     switch tag {
                     case .punctuation, .otherPunctuation:
                         if let lastWord = results.last {
-                            results[results.count - 1] = lastWord.trimmingCharacters(in: .whitespaces) + word
+                            results[results.count - 1] = lastWord.trimmingCharacters(in: .whitespaces) + word.replacingOccurrences(of: ",", with: ", ").replacingOccurrences(of: "  ", with: " ")
                         } else {
                             results.append(word)
                         }
+                        
                     case .verb, .noun, .adjective, .adverb, .pronoun, .determiner, .particle, .conjunction, .idiom, .interjection, .number, .otherWord:
                         results.append("\(word) ")
                         print(word)
+                        
                     default:
                         break
                     }
@@ -44,6 +45,7 @@ extension String {
         return results
     }
 }
+
 extension String {
     subscript(safeIndex range: Range<Index>) -> String? {
         guard range.upperBound <= endIndex else {
