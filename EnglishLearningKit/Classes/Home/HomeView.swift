@@ -30,13 +30,20 @@ struct HomeView: View {
             titleView
             contentView
             Spacer()
-            HStack {
-                searchTextField
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
-                    .padding(.horizontal)
+            if onCompleted {
+                SuccessAnimation()
+                    .frame(width: 30, height: 30)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            onCompleted = false
+                        }
+                    }
             }
+            searchTextField
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(10)
+                .padding(.horizontal)
         }
         .frame(maxWidth: .infinity)
         .padding()
@@ -44,8 +51,6 @@ struct HomeView: View {
         .preferredColorScheme(.dark)
         .onAppear {
             currentText = listString[currentIndex]
-        }.sheet(isPresented: $onCompleted) {
-            popupView
         }
     }
 }
