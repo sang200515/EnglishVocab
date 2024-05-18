@@ -16,12 +16,17 @@ public struct MultilineHStack: View {
             value.append(contentsOf: nextValue())
         }
     }
-    
+    private var index: Int
     private let items: [Any] // Convert AnyView to Any
     @State private var sizes: [CGSize] = []
     
-    public init<Data: RandomAccessCollection, Content: View>(_ data: Data, @ViewBuilder content: (Data.Element) -> Content) {
+    public init<Data: RandomAccessCollection, Content: View>(
+        index: Int = 0,
+        _ data: Data,
+        @ViewBuilder content: (Data.Element) -> Content
+    ) {
         self.items = data.map { content($0) as Any }
+        self.index = index
     }
     
     public var body: some View {
@@ -31,6 +36,7 @@ public struct MultilineHStack: View {
                     if let view = self.items[index] as? Text {
                         view.background(self.backgroundView())
                             .offset(self.getOffset(at: index, geometry: geometry))
+                            .foregroundColor(index <= self.index ? .blue : .primary)
                     }
                 }
             }

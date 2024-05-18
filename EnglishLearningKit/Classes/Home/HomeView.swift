@@ -9,13 +9,13 @@ import SwiftUI
 import NaturalLanguage
 
 struct HomeView: View {
-    @ObservedObject var state = HomeState()
+//    @ObservedObject var state = HomeState()
     @State private var searchText = ""
     @State private var currentText = ""
     @State private var currentIndex: Int = 0
     @State private var onSucess: Bool = false
     @State private var onEdittingSucess: Bool = false
-    @State  var onCompleted: Bool = false {
+    @State private var onCompleted: Bool = false {
         didSet {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 resetState()
@@ -28,6 +28,7 @@ struct HomeView: View {
     var body: some View {
         VStack {
             titleView
+            Spacer()
             contentView
             Spacer()
             if onCompleted {
@@ -87,6 +88,29 @@ private extension HomeView {
             }
     }
     
+    private func createString(text: String) -> AttributedString {
+        let helloAttributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 35, weight: .bold),
+            .foregroundColor: UIColor.red
+        ]
+        let helloString = NSAttributedString(string: "Hello, ", attributes: helloAttributes)
+
+        let worldAttributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 35, weight: .bold),
+            .foregroundColor: UIColor.blue
+        ]
+        let worldString = NSAttributedString(string: "World!", attributes: worldAttributes)
+
+        // Combine the segments into a single attributed string
+        let uiKitAttributedString = NSMutableAttributedString()
+        uiKitAttributedString.append(helloString)
+        uiKitAttributedString.append(worldString)
+
+        // Convert the UIKit attributed string to a SwiftUI AttributedString
+        let swiftUIAttributedString = AttributedString(uiKitAttributedString)
+        return swiftUIAttributedString
+    }
+    
     var contentView: some View {
         VStack {
             MultilineHStack(self.listString) {
@@ -97,7 +121,7 @@ private extension HomeView {
             }
             
             Text("Wrong keyword")
-            MultilineHStack(self.listWrongKeyWord) {
+            MultilineHStack( self.listWrongKeyWord) {
                 Text($0)
                     .foregroundColor(.primary)
                     .font(.system(size: 35))
@@ -116,7 +140,9 @@ private extension HomeView {
             .font(.body)
             .frame(width: 350, height: 60)
             .textInputAutocapitalization(.never)
+            .fixedSize()
             .focused($isFocused)
+            .fixedSize(horizontal: false, vertical: true)
             .onChange(of: searchText) { newValue in
                 print("New value: \(newValue)")
                 onSucess = newValue.lowercased() == currentText.lowercased()
