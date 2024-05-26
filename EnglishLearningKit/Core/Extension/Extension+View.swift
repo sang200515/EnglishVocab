@@ -36,12 +36,23 @@ public struct MultilineHStack: View {
                     if let view = self.items[index] as? Text {
                         view.background(self.backgroundView())
                             .offset(self.getOffset(at: index, geometry: geometry))
-                            .foregroundColor(index <= self.index ? .blue : .primary)
+                            .foregroundColor(foregroundColor(at: index))
                     }
                 }
             }
         }.onPreferenceChange(SizePreferenceKey.self) {
             self.sizes = $0
+        }
+    }
+  
+    private func foregroundColor(at index: Int) -> Color {
+        switch index {
+        case let i where i > self.index:
+            return .primary
+        case self.index:
+            return .yellow
+        default:
+            return .blue
         }
     }
     

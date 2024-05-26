@@ -9,21 +9,7 @@ import SwiftUI
 import NaturalLanguage
 
 struct HomeView: View {
-//    @ObservedObject var state = HomeState()
-    @State private var searchText = ""
-    @State private var currentText = ""
-    @State private var currentIndex: Int = 0
-    @State private var onSucess: Bool = false
-    @State private var onEdittingSucess: Bool = false
-    @State private var onCompleted: Bool = false {
-        didSet {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                resetState()
-            }
-        }
-    }
-    @State private var listString: [String] = "Sure, here's the updated code with the comment fixed:".keywords
-    @State private var listWrongKeyWord: [String] = []
+    @ObservedObject private var state = HomeState()
     @FocusState private var isFocused: Bool
     var body: some View {
         VStack {
@@ -31,12 +17,12 @@ struct HomeView: View {
             Spacer()
             contentView
             Spacer()
-            if onCompleted {
+            if state.onCompleted {
                 SuccessAnimation()
                     .frame(width: 30, height: 30)
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            onCompleted = false
+                            state.onCompleted = false
                         }
                     }
             }
@@ -51,17 +37,13 @@ struct HomeView: View {
         .background(ignoresSafeAreaEdges: .top)
         .preferredColorScheme(.dark)
         .onAppear {
-            currentText = listString[currentIndex]
+            state.currentText = state.listString[state.currentIndex]
         }
     }
 }
 
 private extension HomeView {
-    private func resetState(){
-        currentIndex = 0
-        currentText = listString[currentIndex]
-        searchText = ""
-    }
+   
     
     var titleView: some View {
         Text("Text editing")
@@ -72,10 +54,10 @@ private extension HomeView {
             .overlay {
                 Button(action: {
                     if let clipboardContent = UIPasteboard.general.string, !clipboardContent.isEmpty {
-                        listString = clipboardContent
+                        state.listString = clipboardContent
                             .keywords
                         
-                        resetState()
+                        state.resetState()
                     }
                     
                 }, label: {
@@ -89,6 +71,7 @@ private extension HomeView {
     }
     
     private func createString(text: String) -> AttributedString {
+        guard state.onIndex == state.currentIndex else { return AttributedString(stringLiteral: text) }
         let helloAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 35, weight: .bold),
             .foregroundColor: UIColor.red
@@ -113,17 +96,16 @@ private extension HomeView {
     
     var contentView: some View {
         VStack {
-            MultilineHStack(self.listString) {
+            MultilineHStack(state.listString) {
                 Text($0)
-                    .foregroundColor(.primary)
                     .font(.system(size: 35))
                     .bold()
             }
             
             Text("Wrong keyword")
-            MultilineHStack( self.listWrongKeyWord) {
+            MultilineHStack( state.listWrongKeyWord) {
                 Text($0)
-                    .foregroundColor(.primary)
+                    .foregroundColor(Color.primary)
                     .font(.system(size: 35))
                     .bold()
             }
@@ -132,45 +114,44 @@ private extension HomeView {
     }
     
     var searchTextField: some View {
-        TextField(currentText, text: $searchText)
+        TextField(state.currentText, text: $state.searchText)
             .autocorrectionDisabled(true)
             .font(.system(size: 50, weight: .bold))
             .padding()
-            .foregroundColor(onEdittingSucess ? .blue : .red)
+            .foregroundColor(state.onEdittingSucess ? .blue : .red)
             .font(.body)
             .frame(width: 350, height: 60)
             .textInputAutocapitalization(.never)
             .fixedSize()
             .focused($isFocused)
             .fixedSize(horizontal: false, vertical: true)
-            .onChange(of: searchText) { newValue in
-                print("New value: \(newValue)")
-                onSucess = newValue.lowercased() == currentText.lowercased()
-                if onSucess {
-                    currentIndex += 1
+            .onChange(of: state.searchText) { newValue in
+                state.onSucess = newValue.lowercased() == state.currentText.lowercased()
+                if state.onSucess {
+                    state.currentIndex += 1
                     guard validateLastArraySuccess() else {
-                        onCompleted = true
+                        state.onCompleted = true
                         return
                     }
-                    currentText = listString[currentIndex]
-                    searchText = ""
+                    state.currentText = state.listString[state.currentIndex]
+                    state.searchText = ""
                 }
                 
-                onEdittingSucess = newValue.lowercased() == currentText.prefix(newValue.count).lowercased()
+                state.onEdittingSucess = newValue.lowercased() == state.currentText.prefix(newValue.count).lowercased()
             }
             .onSubmit {
-                currentIndex += 1
+                state.currentIndex += 1
                 guard validateLastArraySuccess() else {
-                    onCompleted = true
+                    state.onCompleted = true
                     return
                 }
-                currentText = listString[currentIndex]
-                searchText = ""
+                state.currentText = state.listString[state.currentIndex]
+                state.searchText = ""
                 isFocused = true
                 
-                if currentText.lowercased() != searchText.lowercased() {
-                    listWrongKeyWord.append(listString[currentIndex - 1])
-                    print("listWrongKeyWord \(listWrongKeyWord)")
+                if state.currentText.lowercased() != state.searchText.lowercased() {
+                    state.listWrongKeyWord.append(state.listString[state.currentIndex - 1])
+                    print("listWrongKeyWord \(state.listWrongKeyWord)")
                 }
             }
         
@@ -185,7 +166,7 @@ private extension HomeView {
             Text("You're success")
             
             Button("Close") {
-                onCompleted = false
+                state.onCompleted = false
             }
         }
         .padding()
@@ -194,8 +175,8 @@ private extension HomeView {
     
     
     private func validateLastArraySuccess() -> Bool {
-        print("valiedate \(currentIndex  < listString.count)")
-        return  currentIndex < listString.count
+        print("valiedate \(state.currentIndex  < state.listString.count)")
+        return  state.currentIndex < state.listString.count
     }
 }
 
