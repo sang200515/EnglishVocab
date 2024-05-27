@@ -11,6 +11,7 @@ import NaturalLanguage
 struct HomeView: View {
     @ObservedObject private var state = HomeState()
     @FocusState private var isFocused: Bool
+   
     var body: some View {
         VStack {
             titleView

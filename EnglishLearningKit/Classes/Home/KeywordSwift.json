@@ -1,0 +1,207 @@
+{
+    "propertyWrappers": [
+        {
+            "parent": "property wrappers",
+            "fullText": "@AccessibilityFocusState var isNotificationFocused: Bool",
+            "keyword": "AccessibilityFocusState",
+            "description": "@AccessibilityFocusState là một property wrapper trong SwiftUI dùng để quản lý và xác định yếu tố giao diện nào đang được tiêu điểm truy cập (focus) nhằm hỗ trợ người dùng có nhu cầu truy cập đặc biệt",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@StateObject var viewModel = ViewModel()",
+            "keyword": "StateObject",
+            "description": "@StateObject là một property wrapper được sử dụng để tạo và quản lý vòng đời của các đối tượng tuân theo giao thức ObservableObject trong SwiftUI. Nó đảm bảo rằng đối tượng được tạo ra và duy trì bởi view, và bất kỳ thay đổi nào đối với dữ liệu trong đối tượng này sẽ tự động cập nhật giao diện người dùng.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@Published var count: Int = 0",
+            "keyword": "Published",
+            "description": "@Published là một property wrapper được sử dụng bên trong các lớp tuân theo ObservableObject để tự động phát thông báo về các thay đổi cho bất kỳ view nào đang quan sát.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@State private var isOn: Bool = false",
+            "keyword": "State",
+            "description": "@State là một property wrapper được sử dụng để khai báo và quản lý trạng thái nội bộ của view trong SwiftUI. Khi trạng thái thay đổi, view sẽ tự động được cập nhật.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@EnvironmentObject var settings: UserSettings",
+            "keyword": "EnvironmentObject",
+            "description": "@EnvironmentObject là một property wrapper được sử dụng để truy cập dữ liệu chia sẻ trong môi trường của view. Nó thường được sử dụng để chia sẻ dữ liệu giữa nhiều view mà không cần truyền dữ liệu qua tất cả các view trung gian.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@ObservedObject var viewModel: ViewModel",
+            "keyword": "ObservedObject",
+            "description": "@ObservedObject là một property wrapper được sử dụng để theo dõi các đối tượng ObservableObject và tự động cập nhật view khi có thay đổi.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@Environment(\\.managedObjectContext) var context",
+            "keyword": "Environment",
+            "description": "@Environment là một property wrapper được sử dụng để truy cập các giá trị từ môi trường SwiftUI, chẳng hạn như các biến hệ thống hoặc dữ liệu được cung cấp bởi các view tổ tiên.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@Binding var isPresented: Bool",
+            "keyword": "Binding",
+            "description": "@Binding là một property wrapper được sử dụng để tạo một liên kết hai chiều giữa một thuộc tính và một nguồn dữ liệu. Điều này cho phép thay đổi thuộc tính sẽ cập nhật nguồn dữ liệu và ngược lại.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@AppStorage('username') var username: String = ''",
+            "keyword": "AppStorage",
+            "description": "@AppStorage là một property wrapper trong SwiftUI dùng để lưu trữ và truy xuất dữ liệu từ UserDefaults một cách thuận tiện.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@SceneStorage('selectedTab') var selectedTab: Int = 0",
+            "keyword": "SceneStorage",
+            "description": "@SceneStorage là một property wrapper trong SwiftUI dùng để lưu trữ và khôi phục trạng thái giao diện cho từng cảnh (scene) cụ thể.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@FetchRequest var items: FetchedResults<Item>",
+            "keyword": "FetchRequest",
+            "description": "@FetchRequest là một property wrapper trong SwiftUI dùng để tìm nạp các đối tượng từ Core Data.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@GestureState var dragAmount: CGSize = .zero",
+            "keyword": "GestureState",
+            "description": "@GestureState là một property wrapper trong SwiftUI dùng để quản lý trạng thái của các cử chỉ (gestures).",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@ScaledMetric var scaleFactor: CGFloat = 1.0",
+            "keyword": "ScaledMetric",
+            "description": "@ScaledMetric là một property wrapper trong SwiftUI dùng để điều chỉnh các giá trị số dựa trên kích thước văn bản hiện tại.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@FocusState var isTextFieldFocused: Bool",
+            "keyword": "FocusState",
+            "description": "@FocusState là một property wrapper trong SwiftUI dùng để quản lý trạng thái tiêu điểm (focus) của các yếu tố giao diện.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@Environment(\\.colorScheme) var colorScheme",
+            "keyword": "Environment",
+            "description": "@Environment là một property wrapper được sử dụng để truy cập các giá trị từ môi trường SwiftUI, chẳng hạn như chế độ màu (light hoặc dark).",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@UIApplicationDelegateAdaptor private var appDelegate: MyAppDelegate",
+            "keyword": "UIApplicationDelegateAdaptor",
+            "description": "@UIApplicationDelegateAdaptor là một property wrapper trong SwiftUI dùng để quản lý delegate của ứng dụng.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@MainActor var viewModel: ViewModel",
+            "keyword": "MainActor",
+            "description": "@MainActor là một property wrapper được sử dụng để đảm bảo rằng một thuộc tính hoặc một hàm được thực thi trên luồng chính.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@WantsRawRepresentable var rawValue: Int",
+            "keyword": "WantsRawRepresentable",
+            "description": "@WantsRawRepresentable là một property wrapper tùy chỉnh để ánh xạ các giá trị thô đến và từ kiểu dữ liệu cụ thể.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@ViewBuilder var body: some View",
+            "keyword": "ViewBuilder",
+            "description": "@ViewBuilder là một property wrapper được sử dụng để tạo các khối xây dựng view trong SwiftUI.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@available(iOS 14.0, *)",
+            "keyword": "available",
+            "description": "@available là một property wrapper trong SwiftUI dùng để xác định phiên bản hệ điều hành tối thiểu cần thiết để sử dụng một tính năng cụ thể.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@IBOutlet weak var label: UILabel!",
+            "keyword": "IBOutlet",
+            "description": "@IBOutlet là một property wrapper trong UIKit dùng để liên kết các thành phần giao diện từ Interface Builder với mã nguồn.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@IBInspectable var cornerRadius: CGFloat",
+            "keyword": "IBInspectable",
+            "description": "@IBInspectable là một property wrapper trong UIKit cho phép bạn tùy chỉnh các thuộc tính của view trực tiếp trong Interface Builder.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@Delayed var delayedText: String",
+            "keyword": "Delayed",
+            "description": "@Delayed is custom property wrappers, it's same as lazy",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@FocusedBinding var isFocused: Bool",
+            "keyword": "FocusedBinding",
+            "description": "@FocusedBinding là một property wrapper trong SwiftUI dùng để liên kết trực tiếp với trạng thái tiêu điểm (focus) của một yếu tố giao diện.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@FocusedObject var focusedItem: FocusedItem?",
+            "keyword": "FocusedObject",
+            "description": "@FocusedObject là một property wrapper trong SwiftUI dùng để liên kết với một đối tượng được đánh dấu là tiêu điểm (focused) trong một phạm vi cụ thể của view hierarchy.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@FocusedValue var focusedValue: String?",
+            "keyword": "FocusedValue",
+            "description": "@FocusedValue là một property wrapper trong SwiftUI dùng để liên kết với một giá trị được đánh dấu là tiêu điểm (focused) trong một phạm vi cụ thể của view hierarchy.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@GestureState var dragAmount: CGSize = .zero",
+            "keyword": "GestureState",
+            "description": "@GestureState là một property wrapper trong SwiftUI dùng để quản lý trạng thái của các cử chỉ (gestures).",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@Namespace var animation",
+            "keyword": "Namespace",
+            "description": "@Namespace là một property wrapper trong SwiftUI dùng để xác định một không gian tên cho các hiệu ứng hoặc chuyển động.",
+            "color": "#1C1C1E"
+        },
+        {
+            "parent": "property wrappers",
+            "fullText": "@EnvironmentObject var settings: UserSettings",
+            "keyword": "EnvironmentObject",
+            "description": "@EnvironmentObject là một property wrapper trong SwiftUI dùng để truy cập dữ liệu chia sẻ trong môi trường của view.",
+            "color": "#1C1C1E"
+        }
+    ]
+}

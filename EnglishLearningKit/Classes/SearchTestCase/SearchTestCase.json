@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "tag": ["video", "ui", "text"],
+    "link_jira": "https://jira.example.com/browse/ISSUE-123",
+    "description": "Lỗi hiển thị hình ảnh trên UI",
+    "background_color": "#f5f5f5",
+    "priority": 2
+  },
+  {
+    "id": 2,
+    "tag": ["ui", "text"],
+    "link_jira": "https://jira.example.com/browse/ISSUE-456",
+    "description": "Lỗi căn chỉnh văn bản trên UI",
+    "background_color": "#e0e0e0",
+    "priority": 1
+  },
+  {
+    "id": 3,
+    "tag": ["video"],
+    "link_jira": "https://jira.example.com/browse/ISSUE-789",
+    "description": "Lỗi phát video bị gián đoạn",
+    "background_color": "#d0d0d0",
+    "priority": 3
+  }
+]
