@@ -23,7 +23,7 @@ struct SwiftUITypingView: View {
                 }
             }
         }
-        .background(.black)
+        .background(.secondary)
     }
     
     var typingView: some View {
@@ -35,10 +35,10 @@ struct SwiftUITypingView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(item.keyword)
                     .font(.headline)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                 Text(item.description)
                     .font(.subheadline)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .padding(20)
@@ -46,6 +46,7 @@ struct SwiftUITypingView: View {
         }
         .background(Color(hexString: item.color))
         .cornerRadius(20)
+        .colorScheme(.dark)
     }
 }
 #Preview {

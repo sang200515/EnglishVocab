@@ -23,9 +23,10 @@
 		94A37A972C037267002D346A /* SwiftUITypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A37A962C037267002D346A /* SwiftUITypingView.swift */; };
 		94A37A992C037273002D346A /* SwiftUITypingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A37A982C037273002D346A /* SwiftUITypingState.swift */; };
 		94A37A9B2C037654002D346A /* SearchTestCase.json in Resources */ = {isa = PBXBuildFile; fileRef = 94A37A9A2C037654002D346A /* SearchTestCase.json */; };
-		94D444172C03836E00B643A7 /* KeywordSwift.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D444162C03836E00B643A7 /* KeywordSwift.json */; };
+		94D444172C03836E00B643A7 /* propertywrappers.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D444162C03836E00B643A7 /* propertywrappers.json */; };
 		94D444192C03841800B643A7 /* ListKeyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D444182C03841700B643A7 /* ListKeyWord.swift */; };
 		94D4441B2C04E60C00B643A7 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4441A2C04E60C00B643A7 /* Extension+Color.swift */; };
+		94D4441E2C062E6900B643A7 /* modifiers.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D4441D2C062E6900B643A7 /* modifiers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +84,10 @@
 		94A37A962C037267002D346A /* SwiftUITypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITypingView.swift; sourceTree = "<group>"; };
 		94A37A982C037273002D346A /* SwiftUITypingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITypingState.swift; sourceTree = "<group>"; };
 		94A37A9A2C037654002D346A /* SearchTestCase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchTestCase.json; sourceTree = "<group>"; };
-		94D444162C03836E00B643A7 /* KeywordSwift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KeywordSwift.json; sourceTree = "<group>"; };
+		94D444162C03836E00B643A7 /* propertywrappers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = propertywrappers.json; sourceTree = "<group>"; };
 		94D444182C03841700B643A7 /* ListKeyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKeyWord.swift; sourceTree = "<group>"; };
 		94D4441A2C04E60C00B643A7 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		94D4441D2C062E6900B643A7 /* modifiers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = modifiers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		942E60FD2BF39EA200B98602 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				94D4441C2C062E5500B643A7 /* Stub */,
 				942E61022BF39FF800B98602 /* Entity */,
 				942E61012BF39FED00B98602 /* DomainObject */,
 				942E61002BF39FE600B98602 /* UseCase */,
@@ -207,7 +210,6 @@
 		942E61032BF3A00700B98602 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				94D444162C03836E00B643A7 /* KeywordSwift.json */,
 				94D444182C03841700B643A7 /* ListKeyWord.swift */,
 				9428A87B2BF5091D009DD502 /* HomeView.swift */,
 				9428A87D2BF50922009DD502 /* HomeState.swift */,
@@ -266,6 +268,15 @@
 				94A37A982C037273002D346A /* SwiftUITypingState.swift */,
 			);
 			path = SearchTestCase;
+			sourceTree = "<group>";
+		};
+		94D4441C2C062E5500B643A7 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				94D444162C03836E00B643A7 /* propertywrappers.json */,
+				94D4441D2C062E6900B643A7 /* modifiers.json */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,7 +398,8 @@
 				94A37A9B2C037654002D346A /* SearchTestCase.json in Resources */,
 				942E60F72BF39E6000B98602 /* Preview Assets.xcassets in Resources */,
 				942E60F42BF39E6000B98602 /* Assets.xcassets in Resources */,
-				94D444172C03836E00B643A7 /* KeywordSwift.json in Resources */,
+				94D444172C03836E00B643A7 /* propertywrappers.json in Resources */,
+				94D4441E2C062E6900B643A7 /* modifiers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

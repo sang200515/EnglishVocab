@@ -14,7 +14,6 @@ struct HomeView: View {
    
     var body: some View {
         VStack {
-            titleView
             Spacer()
             contentView
             Spacer()
@@ -65,6 +64,7 @@ private extension HomeView {
                     Text("Paste")
                         .font(.system(size: 30))
                         .bold()
+                        .help(/*@START_MENU_TOKEN@*/"Help Content"/*@END_MENU_TOKEN@*/)
                 })
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .keyboardShortcut(.escape, modifiers: /*@START_MENU_TOKEN@*/.command/*@END_MENU_TOKEN@*/)

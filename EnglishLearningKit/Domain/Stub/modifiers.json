@@ -1,0 +1,2452 @@
+{
+    "modifiers": [
+        {
+            "parent": "View",
+            "fullText": "public func redacted(reason: RedactionReasons) -> some View",
+            "keyword": "redacted",
+            "description": "Adds a reason to apply a redaction to this view hierarchy.",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "public func unredacted() -> some View",
+            "keyword": ".unredacted()",
+            "description": "Removes any reason to apply a redaction to this view hierarchy.",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".actionSheet",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listRowInsets()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".alert()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollTargetBehavior()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollTargetLayout()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".containerRelativeFrame()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationDestination()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityAdjustableAction()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityTextContentType()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityHeading()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".multilineTextAlignment()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".truncationMode()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".lineSpacing()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".allowsTightening()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".minimumScaleFactor()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textCase()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".keyframeAnimator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".sensoryFeedback()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onDrop()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".dropDestination()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".invalidatableContent()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".zIndex()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".findNavigator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".findDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".replaceDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".allowedDynamicRange()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".speechAlwaysIncludesPunctuation()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".speechSpellsOutCharacters()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".speechAdjustedPitch()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".speechAnnouncementsQueued()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".backgroundStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".alignmentGuide()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".searchScopes()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".symbolEffectsRemoved()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".selectionDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".userActivity()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onContinueUserActivity()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".selectionDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onOpenURL()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".handlesExternalEvents()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".transformEnvironment()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".colorEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".distortionEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".layerEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".transformPreference()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onReceive()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".menuStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fixedSize()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".colorScheme()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".flipsForRightToLeftLayoutDirection()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textEditorStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toggleStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".statusBarHidden()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".statusBar()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".keyboardType()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".autocapitalization()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textInputAutocapitalization()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".focusedValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".overlayPreferenceValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".backgroundPreferenceValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".foregroundColor()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".headerProminence()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tint()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".modifier()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".indexViewStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".menuOrder()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tabViewStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".menuOrder()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".phaseAnimator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".contentMargins()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".disclosureGroupStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".contentShape()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".menuOrder()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".defaultFocus()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onContinuousHover()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onContinuousHover()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".symbolEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollPosition()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".task()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".springLoadingBehavior()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".searchable()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".transition()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".safeAreaInset()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".safeAreaPadding()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationSplitViewStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".allowsHitTesting()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".environment()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".contentShape()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollTransition()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationBarItems()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".typeSelectEquivalent()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onHover()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listRowSeparator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listRowSeparatorTint()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listSectionSeparator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onPreferenceChange()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilitySortPriority()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".symbolVariant()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityScrollAction()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogDefaultDirectory()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogCustomizationID()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogMessage()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogConfirmationLabel()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogURLEnabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileExporterFilenameLabel()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogImportsUnresolvedAliases()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileDialogBrowserOptions()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".gesture()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".highPriorityGesture()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".simultaneousGesture()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".dialogSuppressionToggle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".dialogSuppressionToggle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileImporter()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".mask()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".background()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".overlay()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".border()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".sheet()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fullScreenCover()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".aspectRatio()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scaledToFit()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scaledToFill()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".defaultAppStorage()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onSubmit()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".submitScope()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationBarHidden()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationBarTitle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".padding()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scenePadding()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".buttonStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".focused()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".offset()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".position()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".submitLabel()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".refreshable()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".geometryGroup()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".projectionEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".transformEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".hoverEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".hoverEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".defaultHoverEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".rotationEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scaleEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".hoverEffectDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".blur()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".brightness()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onAppear()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onDisappear()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".colorInvert()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".colorMultiply()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".contrast()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".grayscale()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".hueRotation()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationViewStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".containerShape()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".persistentSystemOverlays()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".contextMenu()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".luminanceToAlpha()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".saturation()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".opacity()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toolbarBackground()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toolbarColorScheme()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toolbar()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".animation()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".blendMode()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".paletteSelectionEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".buttonStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textFieldStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".drawingGroup()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".shadow()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".searchSuggestions()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tabItem()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".anchorPreference()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".moveDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollContentBackground()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".rotation3DEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".layoutPriority()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".inspector()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".inspectorColumnWidth()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".imageScale()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".font()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".monospacedDigit()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".monospaced()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fontWeight()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fontWidth()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".bold()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".italic()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fontDesign()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.1"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".kerning()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tracking()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".baselineOffset()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".progressViewStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".previewDevice()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".previewLayout()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".previewDisplayName()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".previewContext()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".previewInterfaceOrientation()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".popover()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".environment()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".lineLimit()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollIndicators()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollIndicatorsFlash()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".defaultScrollAnchor()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".scrollBounceBehavior()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listItemTint()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".labelsHidden()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".containerBackground()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tag()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".pickerStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listSectionSpacing()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityHidden()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".id()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".menuActionDismissBehavior()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accentColor()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".clipShape()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".clipped()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".cornerRadius()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".matchedGeometryEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".searchCompletion()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".searchSuggestions()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityRotorEntry()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".layoutValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".buttonBorderShape()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".coordinateSpace()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".environmentObject()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".formStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".equatable()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".foregroundStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".swipeActions()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".deleteDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".accessibilityIgnoresInvertColors()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".dynamicTypeSize()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".underline()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".strikethrough()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationDocument()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listRowSpacing()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toolbar()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onLongPressGesture()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".confirmationDialog()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".ignoresSafeArea()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".gridCellColumns()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".gridCellAnchor()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".gridColumnAlignment()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".gridCellUnsizedAxes()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".visualEffect()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".hoverEffectDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onTapGesture()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".preferredColorScheme()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationTitle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".navigationBarTitleDisplayMode()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".defersSystemGestures()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".transformAnchorPreference()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textContentType()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onChange()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onKeyPress()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".hidden()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".menuIndicator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".focusedValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".focusedSceneValue()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tableStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".controlSize()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".gaugeStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".tableColumnHeaders()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toolbarTitleDisplayMode()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".badge()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".controlGroupStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".keyboardShortcut()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".autocorrectionDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".disableAutocorrection()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".searchDictationBehavior()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".frame()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".privacySensitive()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationDetents()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationDragIndicator()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationBackgroundInteraction()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationCompactAdaptation()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationCornerRadius()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationContentInteraction()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".buttonRepeatBehavior()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textScale()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".contextMenu()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileMover()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".textSelection()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".focusable()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".toolbarRole()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".fileExporter()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".symbolRenderingMode()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".interactiveDismissDisabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".labeledContentStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".interactionActivityTrackingTag()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".presentationBackground()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.4"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".renameAction()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".badgeProminence()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "17.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".transaction()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".focusedObject()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".help()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".listRowBackground()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "154.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".labelStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "14.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".onDrag()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".draggable()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "16.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".datePickerStyle()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "15.0"
+        },
+        {
+            "parent": "View",
+            "fullText": "",
+            "keyword": ".disabled()",
+            "description": "",
+            "color": "#1C1C1E",
+            "ios": "13.0"
+        }
+    ]
+}

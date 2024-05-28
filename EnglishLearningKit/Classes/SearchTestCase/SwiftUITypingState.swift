@@ -15,7 +15,7 @@ final class SwiftUITypingState: ObservableObject {
     }
     
     func loadItemsFromJSON() {
-        if let url = Bundle.main.url(forResource: "KeywordSwift", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "propertywrappers", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let propertyWrappers = try JSONDecoder().decode(PropertyWrapperInfo.self, from: data)
