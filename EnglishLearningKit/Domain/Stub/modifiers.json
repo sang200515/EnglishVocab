@@ -75,30 +75,6 @@
         {
             "parent": "View",
             "fullText": "",
-            "keyword": ".accessibilityAdjustableAction()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "15.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
-            "keyword": ".accessibilityTextContentType()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "15.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
-            "keyword": ".accessibilityHeading()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "15.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
             "keyword": ".multilineTextAlignment()",
             "description": "",
             "color": "#1C1C1E",
@@ -755,14 +731,6 @@
         {
             "parent": "View",
             "fullText": "",
-            "keyword": ".accessibilityValue()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "14.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
             "keyword": ".listRowSeparator()",
             "description": "",
             "color": "#1C1C1E",
@@ -795,23 +763,7 @@
         {
             "parent": "View",
             "fullText": "",
-            "keyword": ".accessibilitySortPriority()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "14.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
             "keyword": ".symbolVariant()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "15.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
-            "keyword": ".accessibilityScrollAction()",
             "description": "",
             "color": "#1C1C1E",
             "ios": "15.0"
@@ -1715,14 +1667,6 @@
         {
             "parent": "View",
             "fullText": "",
-            "keyword": ".accessibilityHidden()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "14.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
             "keyword": ".id()",
             "description": "",
             "color": "#1C1C1E",
@@ -1795,14 +1739,6 @@
         {
             "parent": "View",
             "fullText": "",
-            "keyword": ".accessibilityRotorEntry()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "15.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
             "keyword": ".layoutValue()",
             "description": "",
             "color": "#1C1C1E",
@@ -1871,14 +1807,6 @@
             "description": "",
             "color": "#1C1C1E",
             "ios": "13.0"
-        },
-        {
-            "parent": "View",
-            "fullText": "",
-            "keyword": ".accessibilityIgnoresInvertColors()",
-            "description": "",
-            "color": "#1C1C1E",
-            "ios": "14.0"
         },
         {
             "parent": "View",

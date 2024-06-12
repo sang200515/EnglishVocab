@@ -18,9 +18,6 @@ struct SwiftUITypingView: View {
                     fullView(item: item)
                 }
                 .padding(.horizontal, 24)
-                .onAppear {
-                    state.loadItemsFromJSON()
-                }
             }
         }
         .background(.secondary)
@@ -30,7 +27,7 @@ struct SwiftUITypingView: View {
         Text("typingView")
     }
     
-    func fullView(item: PropertyWrapper) -> some View {
+    func fullView(item: Detail) -> some View {
         ZStack {
             VStack(alignment: .leading, spacing: 8) {
                 Text(item.keyword)

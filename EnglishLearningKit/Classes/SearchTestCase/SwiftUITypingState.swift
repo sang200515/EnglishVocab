@@ -8,13 +8,28 @@
 import Foundation
 
 final class SwiftUITypingState: ObservableObject {
-    @Published var items: [PropertyWrapper] = []
+    @Published private(set) var items: [Detail] = []
     
     init() {
-        loadItemsFromJSON()
+        loadPropertyWrapperFromJSON()
+        loadModifiersFromJSON()
     }
     
-    func loadItemsFromJSON() {
+    private func loadModifiersFromJSON() {
+        if let url = Bundle.main.url(forResource: "modifiers", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let modifiers = try JSONDecoder().decode(ModifierInfo.self, from: data)
+                self.items = modifiers.modifiers
+            } catch {
+                print("Error decoding JSON: \(error)")
+            }
+        } else {
+            print("File not found")
+        }
+    }
+    
+    private func loadPropertyWrapperFromJSON() {
         if let url = Bundle.main.url(forResource: "propertywrappers", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
@@ -30,14 +45,20 @@ final class SwiftUITypingState: ObservableObject {
 }
 
 struct PropertyWrapperInfo: Decodable {
-    let propertyWrappers: [PropertyWrapper]
+    let propertyWrappers: [Detail]
+}
+
+struct ModifierInfo: Decodable {
+    let modifiers: [Detail]
 }
 
 // MARK: - PropertyWrapper
-struct PropertyWrapper: Decodable {
+struct Detail: Decodable {
     let color: String
     let description: String
     let fullText: String
     let keyword: String
     let parent: String
+    let ios: String
 }
+
